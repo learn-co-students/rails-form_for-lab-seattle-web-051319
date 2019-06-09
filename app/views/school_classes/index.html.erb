@@ -1,0 +1,7 @@
+<div>
+  <% @school_classes.each.with_index do |school_class, index| %>
+  Class #<%=index+1%>
+  <div><%= link_to school_class.title, school_class_path(school_class) %></div>
+  <div><%= link_to school_class.room_number, school_class_path(school_class) %></div>
+  <% end %>
+</div>
