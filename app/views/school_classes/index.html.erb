@@ -1,0 +1,6 @@
+
+<h2>School Class List</h2>
+
+<% @schoolclasses.each do |schoolclass| %>
+  <div><%= link_to schoolclass.title, schoolclass%></div>
+<% end %>
